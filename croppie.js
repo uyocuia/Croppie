@@ -673,7 +673,7 @@
 
         self._currentZoom = ui ? ui.value : self._currentZoom;
         transform.scale = self._currentZoom;
-        adjusted_value = parseFloat(self._currentZoom) * 100
+        var adjusted_value = parseFloat(self._currentZoom) * 100
         adjusted_value = Math.round(adjusted_value * 10) / 10
         self.elements.zoomer.setAttribute('aria-valuenow', adjusted_value + ' percent');
         self.elements.zoomer.setAttribute('aria-label', 'zoom ' + adjusted_value + ' percent');
