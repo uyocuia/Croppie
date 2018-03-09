@@ -361,6 +361,7 @@
         }
 
         addClass(boundary, 'cr-boundary');
+        boundary.setAttribute('aria-label', 'Drag to position your image.');
         boundary.setAttribute('aria-dropeffect', 'none');
         bw = self.options.boundary.width;
         bh = self.options.boundary.height;
