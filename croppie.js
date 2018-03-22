@@ -803,13 +803,8 @@
             var LEFT_ARROW  = 37,
                 UP_ARROW    = 38,
                 RIGHT_ARROW = 39,
-                DOWN_ARROW  = 40,
-                SPACE       = 32;
-
-            if (ev.keyCode == SPACE) {
-              alert('space');
-            }
-
+                DOWN_ARROW  = 40;
+                
             if (ev.shiftKey && (ev.keyCode == UP_ARROW || ev.keyCode == DOWN_ARROW)) {
                 var zoom = 0.0;
                 if (ev.keyCode == UP_ARROW) {
